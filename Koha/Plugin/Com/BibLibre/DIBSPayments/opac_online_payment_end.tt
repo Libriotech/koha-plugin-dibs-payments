@@ -28,11 +28,11 @@
                         [% IF message == 'valid_payment' %]
                             <p>Din betalning på [% message_value %] [% currency %] har genomförts.</p>
                         [% ELSIF message == 'no_amount' %]
-                            <p>No amount was passed in!</p>
-                            <p>Please contact a librarian for details.</p>
+                            <p>Inget belopp har angetts.</p>
+                            <p>Vänligen kontakta biblioteket.</p>
                         [% ELSE %]
-                            <p>Unkown error.</p>
-                            <p>Please contact a librarian for details.</p>
+                            <p>Ett oväntat fel uppstod.</p>
+                            <p>Vänligen kontakta biblioteket.</p>
                         [% END %]
                     </div>
                 </div> <!-- / #useraccount -->
