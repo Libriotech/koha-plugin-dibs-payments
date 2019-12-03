@@ -32,13 +32,14 @@ You will need to add to the apache config for your site:
 ```
 
 # DIBS configuration
-* Create a D2 test account (https://www.dibspayment.com/demo-signup)
-* Login to the admin interface (https://payment.architrade.com/login/doLogin.action)
-* Enable `Order ID` and `Transaction status code` in `Integration` => `Return values`
-* Create MD5 keys in `Integration` => `MD5 Keys`
+
+* Contact DIBS to create an account, the plug-in is developed to work with the D2 platform. https://www.dibs.se/. For testing, create a D2 test account. https://www.dibspayment.com/demo-signup
+* Login to the admin interface. https://payment.architrade.com/login/login.action
+* Enable Order ID and Transaction status code in Integration => Return values.
+* Decide on how and when to debit. The Plug-in is verified to work with the batch capture method. Set time to debit in Setup => Closing hour.
+* Create MD5 keys in Integration => MD5 Keys
 
 # Plugin configuration
+
 * Make sure that Koha's OPACBaseURL system preference is correctly set
 * Report your DIBS Merchant ID and MD5 Keys in the plugin configuration page
-
-
