@@ -105,6 +105,7 @@ if ($statuscode and $statuscode == 2) {
     
 	# Renew any items as required
     for my $line ( @{$lines} ) {
+        next unless $line->itemnumber;
         my $item =
           Koha::Items->find( { itemnumber => $line->itemnumber } );
 
