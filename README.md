@@ -1,3 +1,9 @@
+# DEPRECATION
+
+This plugin does NOT work with Koha 22.05.x. You might want to consider this as a replacement:
+
+https://gitlab.lub.lu.se/koha/koha-plugin-easy-payments/
+
 # Introduction
 This Koha plugin enables a library to accept online payments from patrons using the DIBS payments platform.
 See https://tech.dibspayment.com/D2
